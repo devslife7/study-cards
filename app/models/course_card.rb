@@ -1,0 +1,4 @@
+class CourseCard < ApplicationRecord
+  belongs_to :course
+  belongs_to :card
+end
