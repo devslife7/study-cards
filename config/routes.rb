@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   resources :cards
   resources :courses
   resources :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  
+  #return a user ID 
+  get '/users/find/:username' => 'users#find_by_username'
 end
