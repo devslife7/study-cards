@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Course.destroy_all
-User.destroy_all
 CourseCard.destroy_all
 Card.destroy_all
+Course.destroy_all
+User.destroy_all
 
 10.times do
   user = User.create(username: Faker::Name.unique.first_name)
