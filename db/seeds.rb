@@ -17,3 +17,10 @@ User.destroy_all
   card = Card.create(card_front: 'card front', card_back: 'card back')
   course_card = CourseCard.create(correct: rand(0..10), incorrect: rand(0..10), course_id: course.id, card_id: card.id)
 end
+
+firstUser = User.first
+
+10.times do
+  course = firstUser.courses.build(name: Faker::Educator.unique.course_name, private: Faker::Boolean.boolean)
+  course.save
+end
