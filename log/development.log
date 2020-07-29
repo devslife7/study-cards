@@ -4444,3 +4444,341 @@ Processing by UsersController#find_by_username as */*
 Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 14272)
 
 
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCourseCard Load (0.4ms)[0m  [1m[34mSELECT "course_cards".* FROM "course_cards"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (1.4ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 21]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 22]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 24]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 25]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 26]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 27]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 28]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 29]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourseCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 31]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 32]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 33]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 34]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 35]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 36]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 37]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 38]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 39]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 40]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.5ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 52]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 53]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 54]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.4ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 55]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 56]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.2ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 57]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 58]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 59]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 60]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.2ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 61]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 62]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 63]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 64]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 65]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.5ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 66]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 67]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.4ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 68]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 69]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.2ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 70]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Destroy (0.2ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 71]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 63]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 64]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 65]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 66]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 67]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 68]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 69]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 70]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 71]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 72]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Florentino"], ["created_at", "2020-07-29 15:32:32.301691"], ["updated_at", "2020-07-29 15:32:32.301691"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 73], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Criminology 360"], ["private", 0], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.313805"], ["updated_at", "2020-07-29 15:32:32.313805"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.317004"], ["updated_at", "2020-07-29 15:32:32.317004"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.3ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 6], ["incorrect", 8], ["course_id", 72], ["card_id", 41], ["created_at", "2020-07-29 15:32:32.324292"], ["updated_at", "2020-07-29 15:32:32.324292"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Kristie"], ["created_at", "2020-07-29 15:32:32.335801"], ["updated_at", "2020-07-29 15:32:32.335801"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Teaching 268"], ["private", 0], ["user_id", 74], ["created_at", "2020-07-29 15:32:32.341623"], ["updated_at", "2020-07-29 15:32:32.341623"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.345053"], ["updated_at", "2020-07-29 15:32:32.345053"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 73], ["LIMIT", 1]]
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.4ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 8], ["incorrect", 6], ["course_id", 73], ["card_id", 42], ["created_at", "2020-07-29 15:32:32.352139"], ["updated_at", "2020-07-29 15:32:32.352139"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Gregg"], ["created_at", "2020-07-29 15:32:32.355399"], ["updated_at", "2020-07-29 15:32:32.355399"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 75], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nursing 457"], ["private", 1], ["user_id", 75], ["created_at", "2020-07-29 15:32:32.361931"], ["updated_at", "2020-07-29 15:32:32.361931"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.364500"], ["updated_at", "2020-07-29 15:32:32.364500"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.8ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 8], ["incorrect", 3], ["course_id", 74], ["card_id", 43], ["created_at", "2020-07-29 15:32:32.371141"], ["updated_at", "2020-07-29 15:32:32.371141"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Cherrie"], ["created_at", "2020-07-29 15:32:32.374755"], ["updated_at", "2020-07-29 15:32:32.374755"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 76], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Communications 173"], ["private", 1], ["user_id", 76], ["created_at", "2020-07-29 15:32:32.380841"], ["updated_at", "2020-07-29 15:32:32.380841"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.383493"], ["updated_at", "2020-07-29 15:32:32.383493"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 75], ["LIMIT", 1]]
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.3ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 1], ["incorrect", 4], ["course_id", 75], ["card_id", 44], ["created_at", "2020-07-29 15:32:32.390085"], ["updated_at", "2020-07-29 15:32:32.390085"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Charley"], ["created_at", "2020-07-29 15:32:32.392707"], ["updated_at", "2020-07-29 15:32:32.392707"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 77], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Business 514"], ["private", 0], ["user_id", 77], ["created_at", "2020-07-29 15:32:32.398436"], ["updated_at", "2020-07-29 15:32:32.398436"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.400951"], ["updated_at", "2020-07-29 15:32:32.400951"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 76], ["LIMIT", 1]]
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.3ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 8], ["incorrect", 7], ["course_id", 76], ["card_id", 45], ["created_at", "2020-07-29 15:32:32.409204"], ["updated_at", "2020-07-29 15:32:32.409204"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Kala"], ["created_at", "2020-07-29 15:32:32.411766"], ["updated_at", "2020-07-29 15:32:32.411766"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Forensic Science 254"], ["private", 0], ["user_id", 78], ["created_at", "2020-07-29 15:32:32.417461"], ["updated_at", "2020-07-29 15:32:32.417461"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.421697"], ["updated_at", "2020-07-29 15:32:32.421697"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 77], ["LIMIT", 1]]
+  [1m[36mCard Load (0.0ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.3ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 6], ["incorrect", 9], ["course_id", 77], ["card_id", 46], ["created_at", "2020-07-29 15:32:32.429223"], ["updated_at", "2020-07-29 15:32:32.429223"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Onie"], ["created_at", "2020-07-29 15:32:32.432203"], ["updated_at", "2020-07-29 15:32:32.432203"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Law 518"], ["private", 1], ["user_id", 79], ["created_at", "2020-07-29 15:32:32.441721"], ["updated_at", "2020-07-29 15:32:32.441721"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.444540"], ["updated_at", "2020-07-29 15:32:32.444540"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.3ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 1], ["incorrect", 10], ["course_id", 78], ["card_id", 47], ["created_at", "2020-07-29 15:32:32.452823"], ["updated_at", "2020-07-29 15:32:32.452823"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Eve"], ["created_at", "2020-07-29 15:32:32.455936"], ["updated_at", "2020-07-29 15:32:32.455936"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 80], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Computer Science 226"], ["private", 0], ["user_id", 80], ["created_at", "2020-07-29 15:32:32.461872"], ["updated_at", "2020-07-29 15:32:32.461872"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.464909"], ["updated_at", "2020-07-29 15:32:32.464909"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.3ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 3], ["incorrect", 5], ["course_id", 79], ["card_id", 48], ["created_at", "2020-07-29 15:32:32.471771"], ["updated_at", "2020-07-29 15:32:32.471771"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Sparkle"], ["created_at", "2020-07-29 15:32:32.475783"], ["updated_at", "2020-07-29 15:32:32.475783"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 81], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Forensic Science 214"], ["private", 0], ["user_id", 81], ["created_at", "2020-07-29 15:32:32.481498"], ["updated_at", "2020-07-29 15:32:32.481498"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.484401"], ["updated_at", "2020-07-29 15:32:32.484401"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 80], ["LIMIT", 1]]
+  [1m[36mCard Load (0.0ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.4ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 9], ["incorrect", 4], ["course_id", 80], ["card_id", 49], ["created_at", "2020-07-29 15:32:32.491964"], ["updated_at", "2020-07-29 15:32:32.491964"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Brande"], ["created_at", "2020-07-29 15:32:32.494904"], ["updated_at", "2020-07-29 15:32:32.494904"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 82], ["LIMIT", 1]]
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Design 596"], ["private", 0], ["user_id", 82], ["created_at", "2020-07-29 15:32:32.500251"], ["updated_at", "2020-07-29 15:32:32.500251"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "card front"], ["card_back", "card back"], ["created_at", "2020-07-29 15:32:32.503129"], ["updated_at", "2020-07-29 15:32:32.503129"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 81], ["LIMIT", 1]]
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[36mCourseCard Create (0.3ms)[0m  [1m[32mINSERT INTO "course_cards" ("correct", "incorrect", "course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["correct", 10], ["incorrect", 9], ["course_id", 81], ["card_id", 50], ["created_at", "2020-07-29 15:32:32.511287"], ["updated_at", "2020-07-29 15:32:32.511287"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Arts 551"], ["private", 0], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.520725"], ["updated_at", "2020-07-29 15:32:32.520725"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Health Science 478"], ["private", 1], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.527496"], ["updated_at", "2020-07-29 15:32:32.527496"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Health Science 287"], ["private", 0], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.531751"], ["updated_at", "2020-07-29 15:32:32.531751"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Teaching 370"], ["private", 1], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.536927"], ["updated_at", "2020-07-29 15:32:32.536927"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.6ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Arts 330"], ["private", 0], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.544438"], ["updated_at", "2020-07-29 15:32:32.544438"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.6ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Medicine 378"], ["private", 1], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.552098"], ["updated_at", "2020-07-29 15:32:32.552098"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Communications 595"], ["private", 1], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.560871"], ["updated_at", "2020-07-29 15:32:32.560871"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Information Systems 593"], ["private", 1], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.567822"], ["updated_at", "2020-07-29 15:32:32.567822"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.6ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Forensic Science 237"], ["private", 1], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.573919"], ["updated_at", "2020-07-29 15:32:32.573919"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Health Science 532"], ["private", 1], ["user_id", 73], ["created_at", "2020-07-29 15:32:32.584193"], ["updated_at", "2020-07-29 15:32:32.584193"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
