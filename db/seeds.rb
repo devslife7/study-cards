@@ -11,16 +11,20 @@ Card.destroy_all
 Course.destroy_all
 User.destroy_all
 
+usersArray = []
+usersArray << User.create(username: 'Jake')
+usersArray << User.create(username: 'Nick')
+usersArray << User.create(username: 'John')
+
+courseArray = []
 10.times do
-  user = User.create(username: Faker::Name.unique.first_name)
-  course = Course.create(name: Faker::Educator.unique.course_name, private: Faker::Boolean.boolean, user_id: user.id)
-  card = Card.create(card_front: 'card front', card_back: 'card back')
-  course_card = CourseCard.create(correct: rand(0..10), incorrect: rand(0..10), course_id: course.id, card_id: card.id)
+  courseArray << Course.create(name: Faker::Educator.unique.course_name, private: Faker::Boolean.boolean, user_id: usersArray.sample.id)
 end
 
-firstUser = User.first
+30.times do
+  Card.create(card_front: "#{Faker::Music.genre} Question", card_back: "#{Faker::Games::LeagueOfLegends.quote} Answer")
+end
 
-10.times do
-  course = firstUser.courses.build(name: Faker::Educator.unique.course_name, private: Faker::Boolean.boolean)
-  course.save
+20.times do
+  CourseCard.create(correct: rand(0..10), incorrect: rand(0..10), course_id: Course.all.sample.id, card_id: Card.all.sample.id)
 end
