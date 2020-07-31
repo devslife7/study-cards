@@ -11,6 +11,13 @@ class CoursesController < ApplicationController
     render json: newUser, include: [:cards]
   end
 
+  def destroy
+    # byebug
+    course = Course.find(params[:id])
+    course.destroy
+    render json: course
+  end
+
   private
 
   def courseParams
