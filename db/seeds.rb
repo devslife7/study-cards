@@ -14,7 +14,7 @@ User.destroy_all
 usersArray = []
 usersArray << User.create(username: 'Jake')
 usersArray << User.create(username: 'Nick')
-usersArray << User.create(username: 'John')
+usersArray << User.create(username: 'Marcos')
 
 courseArray = []
 10.times do
