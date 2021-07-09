@@ -26675,3 +26675,25 @@ Processing by UsersController#find_by_username as */*
 Completed 200 OK in 59ms (Views: 0.1ms | ActiveRecord: 3.4ms | Allocations: 34570)
 
 
+Started GET "/users/find/Nick" for ::1 at 2021-03-23 13:09:48 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#find_by_username as */*
+  Parameters: {"username"=>"Nick"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Nick"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `find_by_username'
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 151]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 341]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (2.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 343]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 344]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 348]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 349]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+Completed 200 OK in 54ms (Views: 0.3ms | ActiveRecord: 5.3ms | Allocations: 29006)
+
+
