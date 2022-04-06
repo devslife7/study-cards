@@ -26697,3 +26697,266 @@ Processing by UsersController#find_by_username as */*
 Completed 200 OK in 54ms (Views: 0.3ms | ActiveRecord: 5.3ms | Allocations: 29006)
 
 
+Started GET "/" for ::1 at 2022-04-05 15:33:50 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/marcos/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/marcos/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.8ms | Allocations: 480)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 2634)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-04-05 15:33:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.5) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-06 10:46:55 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/marcos/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/marcos/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.4ms | Allocations: 315)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 1596)
+
+
+Started GET "/users/find/Nick" for ::1 at 2022-04-06 10:47:16 -0400
+Processing by UsersController#find_by_username as */*
+  Parameters: {"username"=>"Nick"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Nick"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `find_by_username'
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 151]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 341]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 343]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 344]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 348]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 349]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+Completed 200 OK in 81ms (Views: 0.2ms | ActiveRecord: 5.1ms | Allocations: 34846)
+
+
+Started POST "/courses/" for ::1 at 2022-04-06 10:51:12 -0400
+Processing by CoursesController#create as */*
+  Parameters: {"name"=>"Test Course", "private"=>false, "user_id"=>151, "course"=>{"name"=>"Test Course", "private"=>false, "user_id"=>151}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/courses_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 151], ["LIMIT", 1]]
+  ↳ app/controllers/courses_controller.rb:9:in `create'
+  [1m[36mCourse Create (1.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Test Course"], ["private", 0], ["user_id", 151], ["created_at", "2022-04-06 14:51:12.945021"], ["updated_at", "2022-04-06 14:51:12.945021"]]
+  ↳ app/controllers/courses_controller.rb:9:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/courses_controller.rb:9:in `create'
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 352]]
+  ↳ app/controllers/courses_controller.rb:11:in `create'
+Completed 200 OK in 13ms (Views: 2.3ms | ActiveRecord: 2.9ms | Allocations: 5388)
+
+
+Started POST "/cards/" for ::1 at 2022-04-06 10:51:21 -0400
+Processing by CardsController#create as JSON
+  Parameters: {"data"=>{"cards"=>[{"card_front"=>"\\text{asdf}", "card_back"=>"\\text{asdf}"}, {"card_front"=>"\\text{zxcv}", "card_back"=>"\\text{xxcv}"}], "course_id"=>352}, "card"=>{}}
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 352], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:5:in `create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 151], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "\\text{asdf}"], ["card_back", "\\text{asdf}"], ["created_at", "2022-04-06 14:51:21.369808"], ["updated_at", "2022-04-06 14:51:21.369808"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCourseCard Create (1.6ms)[0m  [1m[32mINSERT INTO "course_cards" ("course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 352], ["card_id", 785], ["created_at", "2022-04-06 14:51:21.379450"], ["updated_at", "2022-04-06 14:51:21.379450"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "\\text{zxcv}"], ["card_back", "\\text{xxcv}"], ["created_at", "2022-04-06 14:51:21.384212"], ["updated_at", "2022-04-06 14:51:21.384212"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCourseCard Create (0.2ms)[0m  [1m[32mINSERT INTO "course_cards" ("course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 352], ["card_id", 786], ["created_at", "2022-04-06 14:51:21.387323"], ["updated_at", "2022-04-06 14:51:21.387323"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+Completed 200 OK in 57ms (Views: 0.3ms | ActiveRecord: 5.1ms | Allocations: 16710)
+
+
+Started DELETE "/cards/786" for ::1 at 2022-04-06 10:51:47 -0400
+Processing by CardsController#destroy as */*
+  Parameters: {"id"=>"786"}
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 786], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:17:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+  [1m[36mCourseCard Load (0.4ms)[0m  [1m[34mSELECT "course_cards".* FROM "course_cards" WHERE "course_cards"."card_id" = ?[0m  [["card_id", 786]]
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+  [1m[36mCourseCard Destroy (0.7ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 172]]
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 786]]
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 3.6ms | Allocations: 4914)
+
+
+Started DELETE "/courses/352" for ::1 at 2022-04-06 10:51:52 -0400
+Processing by CoursesController#destroy as */*
+  Parameters: {"id"=>"352"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 352], ["LIMIT", 1]]
+  ↳ app/controllers/courses_controller.rb:16:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/courses_controller.rb:17:in `destroy'
+  [1m[36mCourseCard Load (0.5ms)[0m  [1m[34mSELECT "course_cards".* FROM "course_cards" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 352]]
+  ↳ app/controllers/courses_controller.rb:17:in `destroy'
+  [1m[36mCourseCard Destroy (0.8ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 171]]
+  ↳ app/controllers/courses_controller.rb:17:in `destroy'
+  [1m[36mCourse Destroy (0.4ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 352]]
+  ↳ app/controllers/courses_controller.rb:17:in `destroy'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/courses_controller.rb:17:in `destroy'
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 3.6ms | Allocations: 4872)
+
+
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /Users/marcos/.rvm/gems/ruby-3.1.1/gems/actionpack-7.0.2.3/lib/action_controller/railtie.rb:80)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from block (2 levels) in <class:Railtie> at /Users/marcos/.rvm/gems/ruby-3.1.1/gems/activerecord-7.0.2.3/lib/active_record/railtie.rb:274)
+Started GET "/users/find/Nick" for ::1 at 2022-04-06 11:13:49 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#find_by_username as */*
+  Parameters: {"username"=>"Nick"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Nick"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `find_by_username'
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 151]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 341]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 343]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.0ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 344]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 348]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 349]]
+  ↳ app/services/user_serializer.rb:7:in `to_json'
+Completed 200 OK in 46ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 32276)
+
+
+Started POST "/courses/" for ::1 at 2022-04-06 11:13:54 -0400
+Processing by CoursesController#create as */*
+  Parameters: {"name"=>"test", "private"=>false, "user_id"=>151, "course"=>{"name"=>"test", "private"=>false, "user_id"=>151}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/courses_controller.rb:9:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 151], ["LIMIT", 1]]
+  ↳ app/controllers/courses_controller.rb:9:in `create'
+  [1m[36mCourse Create (1.0ms)[0m  [1m[32mINSERT INTO "courses" ("name", "private", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["private", 0], ["user_id", 151], ["created_at", "2022-04-06 15:13:54.123382"], ["updated_at", "2022-04-06 15:13:54.123382"]]
+  ↳ app/controllers/courses_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/courses_controller.rb:9:in `create'
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" INNER JOIN "course_cards" ON "cards"."id" = "course_cards"."card_id" WHERE "course_cards"."course_id" = ?[0m  [["course_id", 353]]
+  ↳ app/controllers/courses_controller.rb:11:in `create'
+Completed 200 OK in 20ms (Views: 2.5ms | ActiveRecord: 3.6ms | Allocations: 5138)
+
+
+Started POST "/cards/" for ::1 at 2022-04-06 11:14:07 -0400
+Processing by CardsController#create as JSON
+  Parameters: {"data"=>{"cards"=>[{"card_front"=>"\\text{1111111}", "card_back"=>"\\text{222222}"}, {"card_front"=>"\\text{33333}", "card_back"=>"\\text{444444}"}], "course_id"=>353}, "card"=>{}}
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 353], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 151], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "\\text{1111111}"], ["card_back", "\\text{222222}"], ["created_at", "2022-04-06 15:14:07.225566"], ["updated_at", "2022-04-06 15:14:07.225566"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCourseCard Create (0.2ms)[0m  [1m[32mINSERT INTO "course_cards" ("course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 353], ["card_id", 787], ["created_at", "2022-04-06 15:14:07.233642"], ["updated_at", "2022-04-06 15:14:07.233642"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "\\text{33333}"], ["card_back", "\\text{444444}"], ["created_at", "2022-04-06 15:14:07.237541"], ["updated_at", "2022-04-06 15:14:07.237541"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCourseCard Create (0.2ms)[0m  [1m[32mINSERT INTO "course_cards" ("course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 353], ["card_id", 788], ["created_at", "2022-04-06 15:14:07.273137"], ["updated_at", "2022-04-06 15:14:07.273137"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+Completed 200 OK in 79ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 13248)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from block (2 levels) in <class:Railtie> at /Users/marcos/.rvm/gems/ruby-3.1.1/gems/activerecord-7.0.2.3/lib/active_record/railtie.rb:274)
+Started POST "/cards/" for ::1 at 2022-04-06 11:14:48 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from <main> at /Users/marcos/Development/Projects/Mod3Project/study-cards/app/controllers/application_controller.rb:1)
+Processing by CardsController#create as JSON
+  Parameters: {"data"=>{"cards"=>[{"card_front"=>"\\text{asdf}", "card_back"=>"\\text{asdf}"}], "course_id"=>353}, "card"=>{}}
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 353], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 151], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("card_front", "card_back", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["card_front", "\\text{asdf}"], ["card_back", "\\text{asdf}"], ["created_at", "2022-04-06 15:14:48.724589"], ["updated_at", "2022-04-06 15:14:48.724589"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mCourseCard Create (0.2ms)[0m  [1m[32mINSERT INTO "course_cards" ("course_id", "card_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 353], ["card_id", 789], ["created_at", "2022-04-06 15:14:48.730221"], ["updated_at", "2022-04-06 15:14:48.730221"]]
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cards_controller.rb:9:in `block in create'
+Completed 200 OK in 35ms (Views: 0.6ms | ActiveRecord: 3.3ms | Allocations: 25081)
+
+
+Started DELETE "/cards/787" for ::1 at 2022-04-06 11:14:53 -0400
+Processing by CardsController#destroy as */*
+  Parameters: {"id"=>"787"}
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 787], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:17:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+  [1m[36mCourseCard Load (0.4ms)[0m  [1m[34mSELECT "course_cards".* FROM "course_cards" WHERE "course_cards"."card_id" = ?[0m  [["card_id", 787]]
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+  [1m[36mCourseCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "course_cards" WHERE "course_cards"."id" = ?[0m  [["id", 173]]
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 787]]
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cards_controller.rb:18:in `destroy'
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 3.2ms | Allocations: 4197)
+
+
